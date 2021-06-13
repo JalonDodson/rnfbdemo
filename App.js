@@ -7,7 +7,7 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, Vie } from 'react-native';
 import firebase from '@react-native-firebase/app';
 import analytics from '@react-native-firebase/analytics';
 import auth from '@react-native-firebase/auth';
@@ -49,7 +49,7 @@ export default class App extends Component {
         {messaging().native && <Text style={styles.module}>messaging()</Text>}
         {perf().native && <Text style={styles.module}>perf()</Text>}
         {remote_config().native && <Text style={styles.module}>remote-config()</Text>}
-        {storage().native && <Text style={styles.module}>storage()</Text>}
+        {storage().native && <Text style={styles.module}>storage()</Text>
       </View>
     );
   }
